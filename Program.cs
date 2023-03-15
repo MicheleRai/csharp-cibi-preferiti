@@ -26,7 +26,7 @@ int centro = lunghezza / 2;
 
 if (piattiPreferiti.Length % 2 == 0)
 {
-    Console.WriteLine("I due paitti a metà della mia classifica sono: " + piattiPreferiti[centro] + " e " + piattiPreferiti[centro + 1]);
+    Console.WriteLine("I due paitti a metà della mia classifica sono: " + piattiPreferiti[centro - 1] + " e " + piattiPreferiti[centro]);
 }
 else
 {
