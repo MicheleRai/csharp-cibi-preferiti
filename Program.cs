@@ -20,6 +20,18 @@ Console.WriteLine("Il primo della classifica dei miei cib1 preferiti è: " + pia
 
 Console.WriteLine("L'ultimo della classifica dei miei cib1 preferiti è: " + piattiPreferiti.AsQueryable().Last());
 
+//BONUS: Cibo a metà della classifica
+int lunghezza = piattiPreferiti.Length;
+int centro = lunghezza / 2; 
 
+if (piattiPreferiti.Length % 2 == 0)
+{
+    Console.WriteLine("I due paitti a metà della mia classifica sono: " + piattiPreferiti[centro] + " e " + piattiPreferiti[centro + 1]);
+}
+else
+{
+    Console.WriteLine("Il piatto a metà della mia classifica è: " + piattiPreferiti[centro]);
+
+}
 
 
